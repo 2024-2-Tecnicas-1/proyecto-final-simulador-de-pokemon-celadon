@@ -1,5 +1,8 @@
 package simulador.pokemon;
 
-public class TipoPokemon {
-    // TODO: Aquí va tu código
+public class TipoPokemon{
+
+    public TipoPokemon (){
+        
+    }
 }
