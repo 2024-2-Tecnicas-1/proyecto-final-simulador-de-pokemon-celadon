@@ -27,5 +27,6 @@ public class Pokemon {
     public void entrenar() {
         salud += 5;
         puntosDeAtaque += 3;
+        
     }
 }
