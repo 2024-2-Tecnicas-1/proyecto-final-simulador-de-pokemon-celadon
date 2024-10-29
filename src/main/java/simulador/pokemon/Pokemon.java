@@ -1,31 +1,47 @@
 package simulador.pokemon;
 
-public class Pokemon {
+public abstract class Pokemon {
 
-    private String nombre;
+    String nombre;
     private int salud;
     private int puntosDeAtaque;
-    private int tipo;
+    private TipoPokemon tipo;
     private String estado;
 
-    public Pokemon(String nombre, int salud, int puntosDeAtaque, String estado) {
+    public Pokemon(String nombre, int salud, int puntosDeAtaque, TipoPokemon tipo) {
         this.nombre = nombre;
         this.salud = salud;
         this.puntosDeAtaque = puntosDeAtaque;
-        this.estado = estado;
+        this.tipo = tipo;
+        this.estado = "saludable";
     }
 
-    public int recibirDaño() {
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getSalud() {
+        return salud;
+    }
+
+    public int getPuntosDeAtaque() {
         return puntosDeAtaque;
     }
 
-    public void setPuntosDeAtaque(int puntosDeAtaque ) {
-        this.puntosDeAtaque = puntosDeAtaque;
-        
+    /*public int getTipo() {
+        return tipo;
+    }*/
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void atacar(Pokemon oponente) {
+    }
+
+    public void recibirDaño(int daño) {
     }
 
     public void entrenar() {
-        salud += 5;
-        puntosDeAtaque += 3;
     }
 }
