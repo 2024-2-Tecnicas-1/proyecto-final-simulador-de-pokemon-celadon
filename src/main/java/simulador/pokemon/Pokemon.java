@@ -28,9 +28,6 @@ public abstract class Pokemon {
         return puntosDeAtaque;
     }
 
-    /*public int getTipo() {
-        return tipo;
-    }*/
 
     public String getEstado() {
         return estado;
