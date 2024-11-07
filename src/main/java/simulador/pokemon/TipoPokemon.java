@@ -1,8 +1,5 @@
 package simulador.pokemon;
 
-public class TipoPokemon{
-
-    public TipoPokemon (){
-        
-    }
+public enum TipoPokemon{
+    Normal, Fuego, Agua, Eléctrico, Planta, Hielo;
 }
