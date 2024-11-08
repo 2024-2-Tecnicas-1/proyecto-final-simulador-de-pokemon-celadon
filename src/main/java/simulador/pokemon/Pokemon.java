@@ -17,10 +17,23 @@ public abstract class Pokemon {
     }
 
     public void atacar(Pokemon oponente) {
-    }
+    double multiplicador = TipoPokemon.obtenerMultiplicadorDeDaño(this.tipo, oponente.tipo);
+    int daño = (int)(this.puntosDeAtaque * multiplicador);
+    oponente.recibirDaño(daño);
+    System.out.println(this.nombre + " atacó a " + oponente.getNombre() + " causando " + daño + " puntos de daño.");
+}
+
 
     public void recibirDaño(int daño) {
+    this.salud -= daño;
+    if (this.salud <= 0) {
+        this.salud = 0;
+        this.estado = "debilitado";
+        System.out.println(this.nombre + " ha sido debilitado.");
+    } else {
+        System.out.println(this.nombre + " tiene " + this.salud + " puntos de vida restantes.");
     }
+}
 
     public void entrenar() {
         salud = salud + 10;

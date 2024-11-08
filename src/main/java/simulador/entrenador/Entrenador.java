@@ -30,16 +30,16 @@ public class Entrenador {
             System.out.println("El Pokémon no está en el equipo.");
         }
     }
-    
+     
      public void mostrarPokemones() {
-        System.out.println(nombre + " tiene los siguientes Pokémones:");
-        for (Pokemon pokemon : pokemones) {
-            int n = 0;
-            System.out.println(n+1 + "." + pokemon.getNombre() + ", ");
-        }
+    System.out.println(nombre + " tiene los siguientes Pokémones:");
+    int n = 1;
+    for (Pokemon pokemon : pokemones) {
+        System.out.println(n + ". " + pokemon.getNombre() + " (Salud: " + pokemon.getSalud() + ")");
+        n++;
     }
-
-    // Método para preparar una batalla: selecciona un Pokémon del equipo
+}
+     
     public Pokemon prepararBatalla() {
         if (pokemones.isEmpty()) {
             System.out.println("No tienes Pokémones en tu equipo para la batalla.");
