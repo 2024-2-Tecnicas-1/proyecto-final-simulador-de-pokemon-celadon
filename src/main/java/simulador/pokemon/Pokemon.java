@@ -16,6 +16,19 @@ public abstract class Pokemon {
         this.estado = "saludable";
     }
 
+    public void atacar(Pokemon oponente) {
+    }
+
+    public void recibirDaño(int daño) {
+    }
+
+    public void entrenar() {
+        salud = salud + 10;
+        puntosDeAtaque = puntosDeAtaque + 7;
+    }
+    
+    
+    
     public String getNombre() {
         return nombre;
     }
@@ -28,20 +41,8 @@ public abstract class Pokemon {
         return puntosDeAtaque;
     }
 
-    /*public int getTipo() {
-        return tipo;
-    }*/
-
+    
     public String getEstado() {
         return estado;
-    }
-
-    public void atacar(Pokemon oponente) {
-    }
-
-    public void recibirDaño(int daño) {
-    }
-
-    public void entrenar() {
     }
 }
