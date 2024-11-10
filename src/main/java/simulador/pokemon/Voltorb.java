@@ -2,10 +2,10 @@
 package simulador.pokemon;
 
 
-public class Voltrob extends Pokemon {
+public class Voltorb extends Pokemon {
     
-    public Voltrob (){
-        super("Voltrob", 40, 30, TipoPokemon.Eléctrico);
+    public Voltorb (){
+        super("Voltorb", 40, 30, TipoPokemon.Eléctrico);
     }
     
     @Override

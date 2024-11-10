@@ -1,16 +1,22 @@
 package simulador.pokemon;
 
 public enum TipoPokemon{
-    Normal, Fuego, Agua, Eléctrico, Planta, Hielo;
+    Normal, Fuego, Agua, Eléctrico, Planta, Hielo, veneno, volador, lucha, psiquico, tierra, roca;
 
 
     private static final double[][] multiplicadores = {
-        {1.0, 1.0, 1.0, 1.0, 1.0, 1.0}, // NORMAL
-        {1.0, 1.0, 0.5, 1.0, 2.0, 2.0}, // FUEGO
-        {1.0, 2.0, 1.0, 1.0, 0.5, 1.0}, // AGUA
-        {1.0, 1.0, 2.0, 1.0, 0.0, 1.0}, // ELECTRICO
-        {1.0, 0.5, 2.0, 1.0, 1.0, 2.0}, // PLANTA
-        {1.0, 0.5, 2.0, 1.0, 0.5, 1.0}  // HIELO
+        {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0}, // NORMAL
+        {1.0, 1.0, 0.5, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.5}, // FUEGO
+        {1.0, 2.0, 1.0, 1.0, 0.5, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0}, // AGUA
+        {1.0, 1.0, 2.0, 1.0, 0.0, 1.0, 1.0, 2.0, 1.0, 1.0, 0.0, 1.0}, // ELECTRICO
+        {1.0, 0.5, 2.0, 1.0, 1.0, 2.0, 0.5, 1.0, 1.0, 1.0, 2.0, 2.0}, // PLANTA
+        {1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0},  // HIELO
+        {1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.5},  // VENENO
+        {1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.5},  // VOLADOR
+        {2.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 0.5, 1.0, 2.0},  // LUCHA
+        {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0},  // PSIQUICO
+        {1.0, 2.0, 1.0, 0.0, 1.0, 1.0, 2.0, 0.5, 1.0, 1.0, 1.0, 2.0},  // TIERRA
+        {1.0, 2.0, 1.0, 1.0, 1.0, 2.0, 1.0, 2.0, 0.5, 1.0, 1.0, 1.0},  // ROCA
     };
     
     public static double obtenerMultiplicadorDeDaño(TipoPokemon atacante, TipoPokemon defensor) {
