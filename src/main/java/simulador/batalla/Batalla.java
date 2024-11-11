@@ -1,5 +1,8 @@
 package simulador.batalla;
 
+import simulador.entrenador.Entrenador;
+import simulador.pokemon.Pokemon;
+
 public class Batalla {
     private Entrenador entrenador1;
     private Entrenador entrenador2;

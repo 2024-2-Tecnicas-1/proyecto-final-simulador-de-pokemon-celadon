@@ -16,6 +16,10 @@ public class Entrenador {
         this.nombre = nombre;
         this.pokemones = pokemones;
     }
+
+    public Entrenador(String nombre) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     public void agregarPokemon(Pokemon pokemon) {
         pokemones.add(pokemon);
@@ -78,6 +82,10 @@ public class Entrenador {
 
     public void setPokemones(List<Pokemon> pokemones) {
         this.pokemones = pokemones;
+    }
+
+    public Pokemon elegirPokemon() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
     
