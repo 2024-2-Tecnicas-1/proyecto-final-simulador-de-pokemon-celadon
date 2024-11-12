@@ -43,6 +43,21 @@ public class Entrenador {
         n++;
     }
 }
+    public Pokemon elegirPokemon() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Elige un Pokémon de tu equipo:");
+    mostrarPokemones();
+    System.out.print("Introduce el número del Pokémon que deseas elegir: ");
+    int seleccion = scanner.nextInt();
+    scanner.nextLine(); // Limpiar el buffer de la entrada
+
+    if (seleccion < 1 || seleccion > pokemones.size()) {
+        System.out.println("Selección inválida.");
+        return null;
+    }
+    return pokemones.get(seleccion - 1);
+}
+     
      
     public Pokemon prepararBatalla() {
         if (pokemones.isEmpty()) {
