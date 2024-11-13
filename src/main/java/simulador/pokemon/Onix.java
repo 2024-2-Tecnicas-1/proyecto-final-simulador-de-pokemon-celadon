@@ -5,7 +5,7 @@ package simulador.pokemon;
 public class Onix extends Pokemon {
     
     public Onix (){
-        super("Onix", 35, 45, TipoPokemon.NORMAL);
+        super("Onix", 35, 45, TipoPokemon.ROCA, TipoPokemon.TIERRA);
     }
     
     @Override

@@ -15,7 +15,7 @@ public class Batalla {
     public void iniciarBatalla() {
         System.out.println("¡La batalla entre " + entrenador1.getNombre() + " y " + entrenador2.getNombre() + " está a punto de comenzar!");
         
-        // Los entrenadores eligen sus Pokémon
+        
         Pokemon pokemon1 = entrenador1.prepararBatalla();
         Pokemon pokemon2 = entrenador2.prepararBatalla();
         
@@ -26,9 +26,8 @@ public class Batalla {
         
         System.out.println("¡" + pokemon1.getNombre() + " contra " + pokemon2.getNombre() + "! Que comience la batalla.");
 
-        // Batalla por turnos
         while (pokemon1.getSalud() > 0 && pokemon2.getSalud() > 0) {
-            // Turno del primer Pokémon
+            
             System.out.println(entrenador1.getNombre() + " ordena a " + pokemon1.getNombre() + " que ataque.");
             pokemon1.atacar(pokemon2);
             if (pokemon2.getSalud() <= 0) {
@@ -36,7 +35,7 @@ public class Batalla {
                 break;
             }
 
-            // Turno del segundo Pokémon
+            
             System.out.println(entrenador2.getNombre() + " ordena a " + pokemon2.getNombre() + " que ataque.");
             pokemon2.atacar(pokemon1);
             if (pokemon1.getSalud() <= 0) {
