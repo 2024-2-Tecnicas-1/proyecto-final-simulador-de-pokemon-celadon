@@ -12,14 +12,12 @@ public class Entrenador {
     private String nombre;
     private List<Pokemon> pokemones;
 
-    public Entrenador(String nombre, List<Pokemon> pokemones) {
-        this.nombre = nombre;
-        this.pokemones = pokemones;
-    }
-
     public Entrenador(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    this.nombre = nombre;
+    this.pokemones = new ArrayList<>();
+}
+
+    
     
     public void agregarPokemon(Pokemon pokemon) {
         pokemones.add(pokemon);
@@ -99,8 +97,6 @@ public class Entrenador {
         this.pokemones = pokemones;
     }
 
-    public Pokemon elegirPokemon() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+   
 }
     

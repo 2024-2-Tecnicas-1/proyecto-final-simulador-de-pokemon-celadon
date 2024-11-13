@@ -1,7 +1,7 @@
 package simulador.pokemon;
 
 public enum TipoPokemon{
-    Normal, Fuego, Agua, Eléctrico, Planta, Hielo, veneno, volador, lucha, psiquico, tierra, roca;
+    NORMAL, FUEGO, AGUA, ELÉCTRICO, PLANTA, HIELO, VENENO, VOLADOR, LUCHA, PSIQUICO, TIERRA, ROCA;
 
 
     private static final double[][] multiplicadores = {
