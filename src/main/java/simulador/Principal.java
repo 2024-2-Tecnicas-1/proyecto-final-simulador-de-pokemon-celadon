@@ -1,26 +1,19 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+package simulador;
+
+import java.util.*;
+
 import simulador.batalla.Batalla;
 import simulador.entrenador.Entrenador;
-import simulador.pokemon.Bellsprout;
-import simulador.pokemon.Exeggcute;
-import simulador.pokemon.Farfetch_d;
-import simulador.pokemon.Growlithe;
-import simulador.pokemon.Hitmonlee;
-import simulador.pokemon.Onix;
-import simulador.pokemon.Pokemon;
-import simulador.pokemon.Psyduck;
-import simulador.pokemon.Tentacool;
-import simulador.pokemon.TipoPokemon;
-import simulador.pokemon.Voltorb;
-import simulador.pokemon.Zubat;
+import simulador.pokemon.*;
+
+
 public class Principal {
     public static List<Entrenador> entrenadores = new ArrayList<>();
 
     static Scanner sc = new Scanner(System.in);
 
  
+    
     public static void main(String[] args) {
 
         boolean salir = false;
