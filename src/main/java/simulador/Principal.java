@@ -190,29 +190,31 @@ public class Principal {
     }
 
     private static void entrenarPokemon(Entrenador entrenador) {
+    if (entrenador.getEntrenamientos() < 2) {  // Verifica si se ha entrenado menos de dos veces
         entrenador.mostrarPokemones();
         System.out.println("");
         System.out.println("");
         System.out.print("Introduce el numero del Pokemon que deseas entrenar: ");
-
+        
         int indice = sc.nextInt() - 1;
         sc.nextLine();
-
-        int entrenamientos = 0;
-        if (entrenamientos <= 2) {
-            if (indice >= 0 && indice < entrenador.getPokemones().size()) {
-                Pokemon pokemon = entrenador.getPokemones().get(indice);
-                pokemon.entrenar();
-                System.out.println("");
-                System.out.println("");
-                System.out.println("El Pokemon " + pokemon.getNombre() + " ha sido entrenado.");
-                entrenamientos += 1 ;
-            } else {
-                System.out.println("");
-                System.out.println("Índice no valido. Intenta nuevamente.");
-            }
+        
+        if (indice >= 0 && indice < entrenador.getPokemones().size()) {
+            Pokemon pokemon = entrenador.getPokemones().get(indice);
+            pokemon.entrenar();
+            System.out.println("");
+            System.out.println("");
+            System.out.println("El Pokemon " + pokemon.getNombre() + " ha sido entrenado.");
+            entrenador.incrementarEntrenamientos();  // Incrementa el contador de entrenamientos
+        } else {
+            System.out.println("");
+            System.out.println("Índice no válido. Intenta nuevamente.");
         }
+    } else {
+        System.out.println("Ya no puedes entrenar más Pokémon, has alcanzado el límite.");
     }
+}
+
 
     private static void gestionarPokemones() {
         boolean volver = false;

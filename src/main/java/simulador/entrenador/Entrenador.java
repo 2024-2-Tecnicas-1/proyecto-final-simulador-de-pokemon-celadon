@@ -55,8 +55,18 @@ public class Entrenador {
     }
     return pokemones.get(seleccion - 1);
 }
-     
-     
+    
+    private int entrenamientos = 0;  
+
+    
+    public int getEntrenamientos() {
+        return entrenamientos;
+    }
+
+    public void incrementarEntrenamientos() {
+        entrenamientos++;
+    }
+    
     public Pokemon prepararBatalla() {
         if (pokemones.isEmpty()) {
             System.out.println("No tienes Pokémones en tu equipo para la batalla.");
