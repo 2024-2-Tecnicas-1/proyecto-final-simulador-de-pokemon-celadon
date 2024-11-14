@@ -206,7 +206,7 @@ public class Principal {
                 System.out.println("");
                 System.out.println("");
                 System.out.println("El Pokemon " + pokemon.getNombre() + " ha sido entrenado.");
-
+                entrenamientos += 1 ;
             } else {
                 System.out.println("");
                 System.out.println("Índice no valido. Intenta nuevamente.");
