@@ -36,6 +36,7 @@ public class Principal {
                     break;
                 default:
                     System.out.println("Opción no valida. Intenta nuevamente.");
+                    break;
             }
         }
     }
@@ -82,6 +83,7 @@ public class Principal {
                     break;
                 default:
                     System.out.println("Opcion no valida. Intenta nuevamente.");
+                    break;
             }
         }
     }
@@ -153,6 +155,7 @@ public class Principal {
                     default:
                         System.out.println("");
                         System.out.println("Opcion no valida. Intenta nuevamente.");
+                        break;
                 }
             }
         } else {
@@ -244,6 +247,7 @@ public class Principal {
                 default:
                     System.out.println("");
                     System.out.println("Opcion no valida. Intenta nuevamente.");
+                    break;
             }
         }
     }
