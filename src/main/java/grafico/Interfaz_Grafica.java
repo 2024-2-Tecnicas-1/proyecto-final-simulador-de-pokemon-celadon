@@ -4,7 +4,9 @@
  */
 package grafico;
 
+import java.io.File;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -18,6 +20,16 @@ public class Interfaz_Grafica extends javax.swing.JFrame {
     
     public Interfaz_Grafica() {
         initComponents();
+        cargarLogo();
+    }
+    
+    private void cargarLogo(){
+        final String RUTA = "icono/logo pokemon.png";
+        File archivo = new File(RUTA);
+        if(archivo.exists()){
+            ImageIcon icono = new ImageIcon(RUTA);
+            imagen.setIcon(icono);
+        }
     }
 
     /**
@@ -39,8 +51,6 @@ public class Interfaz_Grafica extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(255, 0, 51));
-
-        imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icono/logo pokemon.png"))); // NOI18N
 
         jButton1.setBackground(new java.awt.Color(0, 102, 255));
         jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
