@@ -130,26 +130,17 @@ public class Interfaz_Grafica extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-                                        
-    GestorDePartidas gestor = new GestorDePartidas();
-    String datos = gestor.cargarPartida("Espacio 2");
-    if (datos.equals("Espacio vacío")) {
-        JOptionPane.showMessageDialog(this, "No hay partida guardada en este espacio.");
-    } else {
-        terceraVentana ventanaJuego = new terceraVentana();
+                  
+        SegundaVentana ventanaJuego = new SegundaVentana();
         ventanaJuego.setVisible(true);
         this.dispose();
-}
-
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
