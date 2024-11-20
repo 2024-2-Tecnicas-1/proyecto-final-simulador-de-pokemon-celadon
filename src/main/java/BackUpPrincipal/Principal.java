@@ -1,5 +1,6 @@
-package simulador;
+package BackUpPrincipal;
 
+import simulador.*;
 import grafico.*;
 
 import java.util.*;
