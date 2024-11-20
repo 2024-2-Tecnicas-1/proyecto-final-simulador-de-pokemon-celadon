@@ -1,5 +1,7 @@
 package simulador;
 
+import grafico.*;
+
 import java.util.*;
 
 import simulador.batalla.Batalla;
@@ -7,6 +9,8 @@ import simulador.entrenador.Entrenador;
 import simulador.pokemon.*;
 
 public class Principal {
+    
+    
 
     public static List<Entrenador> entrenadores = new ArrayList<>();
 
@@ -14,6 +18,29 @@ public class Principal {
 
     public static void main(String[] args) {
 
+        
+        
+         java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Interfaz_Grafica().setVisible(true);
+            }
+        });
+        
+        // Puedes ejecutar otras interfaces también si lo deseas
+        // Por ejemplo, la segunda ventana
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new SegundaVentana().setVisible(false);
+            }
+        });
+        
+        // Y para la tercera ventana, lo mismo
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new terceraVentana().setVisible(false);
+            }
+        });
+        
         boolean salir = false;
 
         while (!salir) {

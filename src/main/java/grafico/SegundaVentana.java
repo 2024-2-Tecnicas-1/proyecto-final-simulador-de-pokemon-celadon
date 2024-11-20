@@ -7,7 +7,7 @@ package grafico;
 import java.io.File;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-
+import logicaNegocio.GestorDePartidas;
 /**
  *
  * @author yenle
@@ -19,17 +19,9 @@ public class SegundaVentana extends javax.swing.JFrame {
      */
     public SegundaVentana() {
         initComponents();
-        cargarLogo(); //colocarlo en los label 1 2 y 3
     }
 
-    private void cargarLogo() {
-        final String RUTA = "icono/pokeball.png";
-        File archivo = new File(RUTA);
-        if (archivo.exists()) {
-            ImageIcon icono = new ImageIcon(RUTA);
-            imagen.setIcon(icono);
-        }
-    }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -57,6 +49,11 @@ public class SegundaVentana extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
         jButton1.setText("¡Primera partida!");
         jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 0), 5));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(255, 204, 0));
         jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
@@ -142,6 +139,16 @@ public class SegundaVentana extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+                                     
+    GestorDePartidas gestor = new GestorDePartidas();
+    gestor.guardarPartida("Espacio 1", "Datos de la partida"); // Cambia "Datos de la partida" según lo necesario
+    terceraVentana ventanaJuego = new terceraVentana();
+    ventanaJuego.setVisible(true);
+    this.dispose();
+
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
