@@ -7,6 +7,7 @@ package grafico;
 import java.io.File;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 import logicaNegocio.GestorDePartidas;
 /**
  *
@@ -141,12 +142,20 @@ public class SegundaVentana extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-                                     
-    GestorDePartidas gestor = new GestorDePartidas();
-    gestor.guardarPartida("Espacio 1", "Datos de la partida"); // Cambia "Datos de la partida" según lo necesario
+     GestorDePartidas gestor = new GestorDePartidas();
+    String datos = gestor.cargarPartida("Espacio 2");
+    if (datos.equals("Espacio vacío")) {
+        JOptionPane.showMessageDialog(this, "No hay partida guardada en este espacio.");
+    gestor.guardarPartida("Espacio 1", "Datos de la partida"); 
     terceraVentana ventanaJuego = new terceraVentana();
     ventanaJuego.setVisible(true);
     this.dispose();
+    } else {
+        terceraVentana ventanaJuego = new terceraVentana();
+        ventanaJuego.setVisible(true);
+        this.dispose();
+    }                                
+    
 
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -45,30 +45,30 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="103" max="-2" attributes="0"/>
+                  <Component id="Zubat" min="-2" pref="103" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" pref="99" max="-2" attributes="0"/>
+                  <Component id="Bellsprout" min="-2" pref="99" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                  <Component id="jButton7" min="-2" pref="104" max="-2" attributes="0"/>
+                  <Component id="Exeggcute" min="-2" pref="104" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jButton3" min="-2" pref="109" max="-2" attributes="0"/>
+                  <Component id="Farfetch_d" min="-2" pref="109" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jButton9" min="-2" pref="106" max="-2" attributes="0"/>
+                  <Component id="Growlithe" min="-2" pref="106" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="129" max="32767" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                          <Component id="jButton4" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="Hitmonlee" min="-2" pref="102" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                          <Component id="jButton5" min="-2" pref="99" max="-2" attributes="0"/>
+                          <Component id="Onix" min="-2" pref="99" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                          <Component id="jButton6" min="-2" pref="103" max="-2" attributes="0"/>
+                          <Component id="Psyduck" min="-2" pref="103" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="jButton8" min="-2" pref="109" max="-2" attributes="0"/>
+                          <Component id="Tentacool" min="-2" pref="109" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                          <Component id="jButton10" min="-2" pref="105" max="-2" attributes="0"/>
+                          <Component id="Voltorb" min="-2" pref="105" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="315" max="-2" attributes="0"/>
@@ -89,31 +89,31 @@
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButton2" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
-                                  <Component id="jButton7" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
-                                  <Component id="jButton3" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <Component id="Bellsprout" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <Component id="Exeggcute" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <Component id="Farfetch_d" alignment="3" min="-2" pref="123" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jButton1" min="-2" pref="123" max="-2" attributes="0"/>
+                              <Component id="Zubat" min="-2" pref="123" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="jButton9" max="32767" attributes="0"/>
+                          <Component id="Growlithe" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton4" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
-                              <Component id="jButton5" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
-                              <Component id="jButton6" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
-                              <Component id="jButton8" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
+                              <Component id="Hitmonlee" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
+                              <Component id="Onix" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
+                              <Component id="Psyduck" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
+                              <Component id="Tentacool" alignment="3" min="-2" pref="131" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jButton10" min="-2" pref="132" max="-2" attributes="0"/>
+                          <Component id="Voltorb" min="-2" pref="132" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
@@ -122,55 +122,85 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="Zubat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Zubat"/>
+          </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZubatActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="Bellsprout">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton2"/>
+            <Property name="text" type="java.lang.String" value="Bellsprout"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BellsproutActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="Hitmonlee">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton4"/>
+            <Property name="text" type="java.lang.String" value="Hitmonlee"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HitmonleeActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="Onix">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton5"/>
+            <Property name="text" type="java.lang.String" value="Onix"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OnixActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton6">
+        <Component class="javax.swing.JButton" name="Psyduck">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton6"/>
+            <Property name="text" type="java.lang.String" value="Psyduck"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PsyduckActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton7">
+        <Component class="javax.swing.JButton" name="Exeggcute">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton3"/>
+            <Property name="text" type="java.lang.String" value="Exeggcute"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExeggcuteActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="Farfetch_d">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton3"/>
+            <Property name="text" type="java.lang.String" value="Farfetch_d"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Farfetch_dActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton8">
+        <Component class="javax.swing.JButton" name="Tentacool">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton8"/>
+            <Property name="text" type="java.lang.String" value="Tentacool"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TentacoolActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton9">
+        <Component class="javax.swing.JButton" name="Growlithe">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton9"/>
+            <Property name="text" type="java.lang.String" value="Growlithe"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GrowlitheActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton10">
+        <Component class="javax.swing.JButton" name="Voltorb">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton10"/>
+            <Property name="text" type="java.lang.String" value="Voltorb"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VoltorbActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
