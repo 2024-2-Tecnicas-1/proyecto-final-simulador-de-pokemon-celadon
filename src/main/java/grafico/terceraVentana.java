@@ -4,10 +4,9 @@
  */
 package grafico;
 
-/**
- *
- * @author yenle
- */
+import simulador.entrenador.Entrenador;
+import simulador.Principal;
+
 public class terceraVentana extends javax.swing.JFrame {
 
     /**
@@ -27,45 +26,91 @@ public class terceraVentana extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        Zubat = new javax.swing.JButton();
+        Bellsprout = new javax.swing.JButton();
+        Hitmonlee = new javax.swing.JButton();
+        Onix = new javax.swing.JButton();
+        Psyduck = new javax.swing.JButton();
+        Exeggcute = new javax.swing.JButton();
+        Farfetch_d = new javax.swing.JButton();
+        Tentacool = new javax.swing.JButton();
+        Growlithe = new javax.swing.JButton();
+        Voltorb = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 51, 102));
 
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Zubat.setText("Zubat");
+        Zubat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ZubatActionPerformed(evt);
             }
         });
 
-        jButton2.setText("jButton2");
+        Bellsprout.setText("Bellsprout");
+        Bellsprout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BellsproutActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("jButton4");
+        Hitmonlee.setText("Hitmonlee");
+        Hitmonlee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HitmonleeActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("jButton5");
+        Onix.setText("Onix");
+        Onix.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OnixActionPerformed(evt);
+            }
+        });
 
-        jButton6.setText("jButton6");
+        Psyduck.setText("Psyduck");
+        Psyduck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PsyduckActionPerformed(evt);
+            }
+        });
 
-        jButton7.setText("jButton3");
+        Exeggcute.setText("Exeggcute");
+        Exeggcute.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExeggcuteActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("jButton3");
+        Farfetch_d.setText("Farfetch_d");
+        Farfetch_d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Farfetch_dActionPerformed(evt);
+            }
+        });
 
-        jButton8.setText("jButton8");
+        Tentacool.setText("Tentacool");
+        Tentacool.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TentacoolActionPerformed(evt);
+            }
+        });
 
-        jButton9.setText("jButton9");
+        Growlithe.setText("Growlithe");
+        Growlithe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GrowlitheActionPerformed(evt);
+            }
+        });
 
-        jButton10.setText("jButton10");
+        Voltorb.setText("Voltorb");
+        Voltorb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VoltorbActionPerformed(evt);
+            }
+        });
 
         jLabel1.setBackground(new java.awt.Color(51, 204, 255));
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 3, 24)); // NOI18N
@@ -78,29 +123,29 @@ public class terceraVentana extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(133, 133, 133)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Zubat, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(56, 56, 56)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Bellsprout, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
-                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Exeggcute, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Farfetch_d, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Growlithe, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 129, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(61, 61, 61)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Hitmonlee, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(47, 47, 47)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Onix, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(48, 48, 48)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Psyduck, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Tentacool, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(49, 49, 49)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Voltorb, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(315, 315, 315)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -116,24 +161,24 @@ public class terceraVentana extends javax.swing.JFrame {
                         .addGap(32, 32, 32)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Bellsprout, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Exeggcute, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Farfetch_d, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Zubat, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(Growlithe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(Hitmonlee, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Onix, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Psyduck, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tentacool, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(33, 33, 33)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Voltorb, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(48, 48, 48))
         );
 
@@ -151,9 +196,45 @@ public class terceraVentana extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BellsproutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BellsproutActionPerformed
+        
+    }//GEN-LAST:event_BellsproutActionPerformed
+
+    private void TentacoolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TentacoolActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_TentacoolActionPerformed
+
+    private void ExeggcuteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExeggcuteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ExeggcuteActionPerformed
+
+    private void Farfetch_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Farfetch_dActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Farfetch_dActionPerformed
+
+    private void ZubatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZubatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ZubatActionPerformed
+
+    private void HitmonleeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HitmonleeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HitmonleeActionPerformed
+
+    private void GrowlitheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GrowlitheActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GrowlitheActionPerformed
+
+    private void OnixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnixActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OnixActionPerformed
+
+    private void PsyduckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PsyduckActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PsyduckActionPerformed
+
+    private void VoltorbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltorbActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VoltorbActionPerformed
 
     /**
      * @param args the command line arguments
@@ -191,16 +272,16 @@ public class terceraVentana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton Bellsprout;
+    private javax.swing.JButton Exeggcute;
+    private javax.swing.JButton Farfetch_d;
+    private javax.swing.JButton Growlithe;
+    private javax.swing.JButton Hitmonlee;
+    private javax.swing.JButton Onix;
+    private javax.swing.JButton Psyduck;
+    private javax.swing.JButton Tentacool;
+    private javax.swing.JButton Voltorb;
+    private javax.swing.JButton Zubat;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

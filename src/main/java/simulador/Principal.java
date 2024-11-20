@@ -26,15 +26,14 @@ public class Principal {
             }
         });
         
-        // Puedes ejecutar otras interfaces también si lo deseas
-        // Por ejemplo, la segunda ventana
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new SegundaVentana().setVisible(false);
             }
         });
         
-        // Y para la tercera ventana, lo mismo
+       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new terceraVentana().setVisible(false);
