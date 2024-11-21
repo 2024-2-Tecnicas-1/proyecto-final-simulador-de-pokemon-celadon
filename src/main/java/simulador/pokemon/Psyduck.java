@@ -5,7 +5,7 @@ package simulador.pokemon;
 public class Psyduck extends Pokemon {
     
     public Psyduck (){
-        super("Psyduck", 55, 70, TipoPokemon.AGUA, TipoPokemon.NULL);
+        super("Psyduck", 55, 70, TipoPokemon.AGUA);
     }
     
     @Override

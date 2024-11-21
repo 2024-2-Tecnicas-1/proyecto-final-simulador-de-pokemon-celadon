@@ -9,7 +9,7 @@ public abstract class Pokemon {
     private TipoPokemon tipo2;
     private String estado;
 
-    public Pokemon(String nombre, int salud, int puntosDeAtaque, TipoPokemon tipo1, TipoPokemon tipo2) {
+    public Pokemon(String nombre, int salud, int puntosDeAtaque, TipoPokemon tipo1) {
         this.nombre = nombre;
         this.salud = salud;
         this.puntosDeAtaque = puntosDeAtaque;
@@ -60,4 +60,10 @@ public abstract class Pokemon {
     public String getEstado() {
         return estado;
     }
+
+    public void recibirDanio(int puntosDeAtaque) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
+
+    

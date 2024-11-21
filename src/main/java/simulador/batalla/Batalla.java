@@ -18,8 +18,15 @@ public class Batalla {
         
         Scanner lectorBatalla = new Scanner(System.in);
         
+        // Verificar que los entrenadores tengan Pokémon asignados
+        if (entrenador1 == null || entrenador2 == null) {
+            System.out.println("Uno de los entrenadores no ha sido inicializado correctamente.");
+            return;
+        }
+
         System.out.println("¡La batalla entre " + entrenador1.getNombre() + " y " + entrenador2.getNombre() + " está a punto de comenzar!");
 
+        // Preparar los Pokémon de cada entrenador
         Pokemon pokemon1 = entrenador1.prepararBatalla();
         Pokemon pokemon2 = entrenador2.prepararBatalla();
 
@@ -30,6 +37,7 @@ public class Batalla {
 
         System.out.println("¡" + pokemon1.getNombre() + " contra " + pokemon2.getNombre() + "! Que comience la batalla.");
 
+        // Simulación de la batalla por turnos
         while (pokemon1.getSalud() > 0 && pokemon2.getSalud() > 0) {
 
             // Turno del entrenador1
@@ -61,11 +69,11 @@ public class Batalla {
             }
         }
 
+        // Determinamos el ganador
         if (pokemon1.getSalud() > 0) {
             System.out.println(entrenador1.getNombre() + " gana la batalla con " + pokemon1.getNombre() + ".");
         } else {
             System.out.println(entrenador2.getNombre() + " gana la batalla con " + pokemon2.getNombre() + ".");
         }
-
     }
 }
