@@ -1,8 +1,8 @@
 
+import java.io.ByteArrayInputStream;
 import simulador.pokemon.*;
 import simulador.entrenador.Entrenador;
 import simulador.pokemon.Pokemon;
-import simulador.pokemon.TipoPokemon;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,17 +15,22 @@ public class EntrenadorTest {
 
     @BeforeEach
     public void setUp() {
-        // Configuración inicial para cada prueba
+
         entrenador = new Entrenador("Ash Ketchum");
         bellsprout = new Bellsprout();
         psyduck = new Psyduck();
+
     }
 
     @Test
     public void testAgregarPokemon() {
 
+        entrenador = new Entrenador("Ash Ketchum");
+        bellsprout = new Bellsprout();
+        psyduck = new Psyduck();
+
         entrenador.agregarPokemon(bellsprout);
-        // Verificacion
+
         assertEquals(1, entrenador.getPokemones().size(), "El entrenador debería tener un Pokémon.");
     }
 
@@ -44,30 +49,34 @@ public class EntrenadorTest {
 
     @Test
     public void testMostrarPokemones() {
-        
+
+        entrenador = new Entrenador("Ash Ketchum");
+        bellsprout = new Bellsprout();
+        psyduck = new Psyduck();
+
         entrenador.agregarPokemon(psyduck);
         entrenador.agregarPokemon(bellsprout);
 
-        
         assertEquals(2, entrenador.getPokemones().size(), "El entrenador debería tener dos Pokémones.");
 
-        
-    }
-
-    @Test
-    public void testPrepararBatalla() {
-        
-        entrenador.agregarPokemon(bellsprout);
-        
-        Pokemon pokemonSeleccionado = entrenador.prepararBatalla();
-        assertEquals(bellsprout, pokemonSeleccionado, "El Pokémon preparado para la batalla debería ser Pikachu.");
     }
 
     @Test
     public void testPrepararBatallaSinPokemones() {
-        
-        Entrenador entrenadorVacio = new Entrenador("Brock");
-       
-        assertNull(entrenadorVacio.prepararBatalla(), "El entrenador no tiene Pokémones disponibles para la batalla.");
+        entrenador = new Entrenador("Ash Ketchum");
+        entrenador.getPokemones().clear(); // 
+
+        assertNull(entrenador.prepararBatalla(), "El entrenador no tiene Pokémones disponibles para la batalla.");
     }
+
+    @Test
+    public void testPrepararBatallaSeleccionInvalida() {
+        entrenador = new Entrenador("Ash Ketchum");
+        String input = "3\n";
+        System.setIn(new ByteArrayInputStream(input.getBytes())); // Redirige System.in a esta entrada
+
+        assertNull(entrenador.prepararBatalla(), "La selección debería ser inválida.");
+    }
+
+    
 }

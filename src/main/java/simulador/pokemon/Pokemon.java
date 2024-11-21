@@ -64,6 +64,13 @@ public abstract class Pokemon {
     public void recibirDanio(int puntosDeAtaque) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
+    
+    
+    
 }
 
     

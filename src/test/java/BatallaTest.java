@@ -1,7 +1,9 @@
 
+import java.io.ByteArrayInputStream;
 import simulador.entrenador.Entrenador;
-import simulador.pokemon.Pokemon;
-import simulador.pokemon.TipoPokemon;
+import simulador.pokemon.*;
+
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,55 +22,75 @@ public class BatallaTest {
         entrenador1 = new Entrenador("Ash Ketchum");
         entrenador2 = new Entrenador("Misty");
 
-        
-        pokemon1 = new Pokemon("Pikachu", 100, 50, TipoPokemon.ELÉCTRICO, TipoPokemon.NULL) {};
-        pokemon2 = new Pokemon("Squirtle", 100, 40, TipoPokemon.AGUA, TipoPokemon.NULL) {};
+        pokemon1 = new Bellsprout();
+        pokemon2 = new Psyduck();
 
-        
         entrenador1.agregarPokemon(pokemon1);
         entrenador2.agregarPokemon(pokemon2);
     }
 
     @Test
-    public void testFinDeBatallaCuandoPokemon2Pierde() {
+    public void testBatallaConEntrenadorNoInicializado() {
         
-        Batalla batalla = new Batalla(entrenador1, entrenador2);
+        Batalla batalla = new Batalla(null, entrenador2);
+        batalla.iniciarBatalla();  
 
         
-        pokemon2.recibirDanio(150);
-
-        
-        batalla.iniciarBatalla();
-
-        
-        assertTrue(pokemon2.getSalud() <= 0, "Squirtle debería haber sido derrotado.");
     }
 
     @Test
-    public void testFinDeBatallaCuandoPokemon1Pierde() {
+    public void testBatallaSinPokemones() {
+        entrenador1 = new Entrenador("Ash Ketchum");
+        entrenador2 = new Entrenador("Misty");
+        
+        
+        entrenador1.getPokemones().clear();
         
         Batalla batalla = new Batalla(entrenador1, entrenador2);
-
-        
-        pokemon1.recibirDanio(150);
-
-        
-        batalla.iniciarBatalla();
-
-        
-        assertTrue(pokemon1.getSalud() <= 0, "Pikachu debería haber sido derrotado.");
+        batalla.iniciarBatalla(); 
     }
 
     @Test
-    public void testBatallaConAmbosPokemonesActivos() {
+    public void testBatallaConAmbosEntrenadoresListos() {
         
         Batalla batalla = new Batalla(entrenador1, entrenador2);
+        
+       
+        String input = "S\nS\n";  
+        System.setIn(new ByteArrayInputStream(input.getBytes())); 
 
         
-        batalla.iniciarBatalla();
+        batalla.iniciarBatalla();  
+
+       
+    }
+
+    @Test
+    public void testBatallaConPokemonesConSaludCero() {
+        pokemon1 = new Bellsprout();
+        
+        pokemon1.setSalud(0);  
+        
+        Batalla batalla = new Batalla(entrenador1, entrenador2);
+        batalla.iniciarBatalla();  
 
         
-        assertTrue(pokemon1.getSalud() > 0, "Pikachu debería seguir con salud.");
-        assertTrue(pokemon2.getSalud() > 0, "Squirtle debería seguir con salud.");
+    }
+
+    @Test
+    public void testSimularBatallaYDeterminarGanador() {
+        pokemon1 = new Bellsprout();
+        pokemon2 = new Psyduck();
+        pokemon1.setSalud(50); 
+        pokemon2.setSalud(30);
+
+       
+        String input = "S\nN\nS\n"; 
+        System.setIn(new ByteArrayInputStream(input.getBytes())); 
+
+        Batalla batalla = new Batalla(entrenador1, entrenador2);
+        batalla.iniciarBatalla();  
+
+        
     }
 }

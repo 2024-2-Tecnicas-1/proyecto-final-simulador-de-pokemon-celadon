@@ -76,4 +76,6 @@ public class Batalla {
             System.out.println(entrenador2.getNombre() + " gana la batalla con " + pokemon2.getNombre() + ".");
         }
     }
+    
+    
 }

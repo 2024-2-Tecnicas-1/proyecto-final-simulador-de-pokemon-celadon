@@ -20,27 +20,6 @@ public class Principal {
     public static void main(String[] args) {
 
         
-        
-         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Interfaz_Grafica().setVisible(true);
-            }
-        });
-        
-        
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SegundaVentana().setVisible(false);
-            }
-        });
-        
-       
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new terceraVentana().setVisible(false);
-            }
-        });
-        
         boolean salir = false;
 
         while (!salir) {
