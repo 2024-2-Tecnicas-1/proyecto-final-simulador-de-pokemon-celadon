@@ -20,7 +20,7 @@ public class TipoPokemonTest {
 
     @Test
     public void testMultiplicadorElectricoContraAgua() {
-        double multiplicador = TipoPokemon.obtenerMultiplicadorDeDaño(TipoPokemon.ELECTRICO, TipoPokemon.AGUA);
+        double multiplicador = TipoPokemon.obtenerMultiplicadorDeDaño(TipoPokemon.ELÉCTRICO, TipoPokemon.AGUA);
         assertEquals(2.0, multiplicador, "Eléctrico debería ser 2x efectivo contra Agua.");
     }
 
@@ -32,7 +32,7 @@ public class TipoPokemonTest {
 
     @Test
     public void testMultiplicadorElectricoContraElectrico() {
-        double multiplicador = TipoPokemon.obtenerMultiplicadorDeDaño(TipoPokemon.ELECTRICO, TipoPokemon.ELECTRICO);
+        double multiplicador = TipoPokemon.obtenerMultiplicadorDeDaño(TipoPokemon.ELÉCTRICO, TipoPokemon.ELÉCTRICO);
         assertEquals(1.0, multiplicador, "Eléctrico debería ser neutro contra Eléctrico.");
     }
 

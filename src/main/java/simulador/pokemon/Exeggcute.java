@@ -1,19 +1,18 @@
-
 package simulador.pokemon;
 
-
 public class Exeggcute extends Pokemon {
-    
-    public Exeggcute (){
-        super("Exeggcute", 60, 40, TipoPokemon.PLANTA);
+
+    public Exeggcute() {
+        super("Exeggcute", 60, 40, TipoPokemon.PLANTA, TipoPokemon.PSIQUICO);
+
     }
-    
+
     @Override
-    public void atacar(Pokemon oponente){
-         System.out.println(this.getNombre() + " ataca");
+    public void atacar(Pokemon oponente) {
+        System.out.println(this.getNombre() + " ataca");
         super.atacar(oponente);
     }
-    
+
     @Override
     public void entrenar() {
         System.out.println(this.getNombre() + " se ha entrenado con fuerza.");
