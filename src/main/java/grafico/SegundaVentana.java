@@ -140,8 +140,8 @@ public class SegundaVentana extends javax.swing.JFrame {
             this.dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Ya hay partida guardada en este espacio.");
-            terceraVentana ventanaJuego = new terceraVentana();
-            ventanaJuego.setVisible(true);
+            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
+            creacionEntrenador.setVisible(true);
             this.dispose();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -156,8 +156,8 @@ public class SegundaVentana extends javax.swing.JFrame {
             ventanaJuego.setVisible(true);
             this.dispose();
         } else {
-            terceraVentana ventanaJuego = new terceraVentana();
-            ventanaJuego.setVisible(true);
+            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
+            creacionEntrenador.setVisible(true);
             this.dispose();
         }
 
@@ -170,12 +170,12 @@ public class SegundaVentana extends javax.swing.JFrame {
         if (datos.equals("Espacio vacío")) {
             JOptionPane.showMessageDialog(this, "No hay partida guardada en este espacio.");
             gestor.guardarPartida("Espacio 3", "Datos de la partida");
-            terceraVentana ventanaJuego = new terceraVentana();
-            ventanaJuego.setVisible(true);
+            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
+            creacionEntrenador.setVisible(true);
             this.dispose();
         } else {
-            terceraVentana ventanaJuego = new terceraVentana();
-            ventanaJuego.setVisible(true);
+            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
+            creacionEntrenador.setVisible(true);
             this.dispose();
         }
     }//GEN-LAST:event_jButton3ActionPerformed

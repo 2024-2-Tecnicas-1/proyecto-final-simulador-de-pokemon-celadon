@@ -115,8 +115,7 @@ public class Principal {
     }
 
     private static void registrarNuevoEntrenador() {
-
-        System.out.println("");
+     System.out.println("");
         System.out.println("");
         System.out.print("Introduce el nombre del nuevo entrenador: ");
         String nombre = sc.nextLine();
@@ -125,7 +124,8 @@ public class Principal {
         entrenadores.add(objetoEntrenador);
         System.out.println("");
         System.out.println("Entrenador " + nombre + " registrado exitosamente.");
-    }
+}
+
 
     private static void verListaDeEntrenadores() {
 

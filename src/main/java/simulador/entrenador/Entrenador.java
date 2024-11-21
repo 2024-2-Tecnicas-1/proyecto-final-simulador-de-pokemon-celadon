@@ -19,7 +19,7 @@ public class Entrenador {
 
     
     
-    public void agregarPokemon(Pokemon pokemon) {
+    public  void agregarPokemon(Pokemon pokemon) {
         pokemones.add(pokemon);
     }
 
@@ -106,6 +106,8 @@ public class Entrenador {
     public void setPokemones(List<Pokemon> pokemones) {
         this.pokemones = pokemones;
     }
+
+   
 
    
 }
