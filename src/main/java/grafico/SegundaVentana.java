@@ -135,47 +135,47 @@ public class SegundaVentana extends javax.swing.JFrame {
         if (datos.equals("Espacio vacío")) {
             JOptionPane.showMessageDialog(this, "No hay partida guardada en este espacio.");
             gestor.guardarPartida("Espacio 1", "Datos de la partida");
-            terceraVentana ventanaJuego = new terceraVentana();
-            ventanaJuego.setVisible(true);
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.setVisible(true);
             this.dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Ya hay partida guardada en este espacio.");
-            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
-            creacionEntrenador.setVisible(true);
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.setVisible(true);
             this.dispose();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         GestorDePartidas gestor = new GestorDePartidas();
-        String datos = gestor.cargarPartida("Espacio 2");
+        String datos = gestor.cargarPartida("Espacio 1");
         if (datos.equals("Espacio vacío")) {
             JOptionPane.showMessageDialog(this, "No hay partida guardada en este espacio.");
-            gestor.guardarPartida("Espacio 2", "Datos de la partida");
-            terceraVentana ventanaJuego = new terceraVentana();
-            ventanaJuego.setVisible(true);
+            gestor.guardarPartida("Espacio 1", "Datos de la partida");
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.setVisible(true);
             this.dispose();
         } else {
-            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
-            creacionEntrenador.setVisible(true);
+            JOptionPane.showMessageDialog(this, "Ya hay partida guardada en este espacio.");
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.setVisible(true);
             this.dispose();
         }
-
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         GestorDePartidas gestor = new GestorDePartidas();
-        String datos = gestor.cargarPartida("Espacio 3");
+        String datos = gestor.cargarPartida("Espacio 1");
         if (datos.equals("Espacio vacío")) {
             JOptionPane.showMessageDialog(this, "No hay partida guardada en este espacio.");
-            gestor.guardarPartida("Espacio 3", "Datos de la partida");
-            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
-            creacionEntrenador.setVisible(true);
+            gestor.guardarPartida("Espacio 1", "Datos de la partida");
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.setVisible(true);
             this.dispose();
         } else {
-            CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
-            creacionEntrenador.setVisible(true);
+            JOptionPane.showMessageDialog(this, "Ya hay partida guardada en este espacio.");
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.setVisible(true);
             this.dispose();
         }
     }//GEN-LAST:event_jButton3ActionPerformed

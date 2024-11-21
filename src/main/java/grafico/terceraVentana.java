@@ -41,7 +41,7 @@ public class terceraVentana extends javax.swing.JFrame {
         Voltorb = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         AgregarEntrenador = new javax.swing.JButton();
-        Luchar = new javax.swing.JButton();
+        VolverMenu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -132,11 +132,11 @@ public class terceraVentana extends javax.swing.JFrame {
             }
         });
 
-        Luchar.setBackground(new java.awt.Color(255, 0, 0));
-        Luchar.setText("A luchar!");
-        Luchar.addActionListener(new java.awt.event.ActionListener() {
+        VolverMenu.setBackground(new java.awt.Color(255, 0, 0));
+        VolverMenu.setText("Menu");
+        VolverMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LucharActionPerformed(evt);
+                VolverMenuActionPerformed(evt);
             }
         });
 
@@ -168,7 +168,7 @@ public class terceraVentana extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Voltorb, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(69, 69, 69)
-                                .addComponent(Luchar))
+                                .addComponent(VolverMenu))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Growlithe, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(42, 42, 42)
@@ -208,8 +208,8 @@ public class terceraVentana extends javax.swing.JFrame {
                         .addGap(47, 47, 47))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Luchar)
-                        .addGap(121, 121, 121))))
+                        .addComponent(VolverMenu)
+                        .addGap(91, 91, 91))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -228,11 +228,11 @@ public class terceraVentana extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void LucharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LucharActionPerformed
-        VentanaBatalla ventanaBatalla = new VentanaBatalla ();
-            ventanaBatalla.setVisible(true);
+    private void VolverMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VolverMenuActionPerformed
+        MenuPrincipal menuPrincipal = new MenuPrincipal ();
+            menuPrincipal.setVisible(true);
             this.dispose();
-    }//GEN-LAST:event_LucharActionPerformed
+    }//GEN-LAST:event_VolverMenuActionPerformed
 
     private void AgregarEntrenadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarEntrenadorActionPerformed
         CreacionEntrenador creacionEntrenador = new CreacionEntrenador ();
@@ -488,11 +488,11 @@ public class terceraVentana extends javax.swing.JFrame {
     private javax.swing.JButton Farfetch_d;
     private javax.swing.JButton Growlithe;
     private javax.swing.JButton Hitmonlee;
-    private javax.swing.JButton Luchar;
     private javax.swing.JButton Onix;
     private javax.swing.JButton Psyduck;
     private javax.swing.JButton Tentacool;
     private javax.swing.JButton Voltorb;
+    private javax.swing.JButton VolverMenu;
     private javax.swing.JButton Zubat;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;

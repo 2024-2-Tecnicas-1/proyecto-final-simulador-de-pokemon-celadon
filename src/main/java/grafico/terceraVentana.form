@@ -74,7 +74,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="Voltorb" min="-2" pref="105" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                                  <Component id="Luchar" min="-2" max="-2" attributes="0"/>
+                                  <Component id="VolverMenu" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="Growlithe" min="-2" pref="106" max="-2" attributes="0"/>
@@ -128,8 +128,8 @@
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="Luchar" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                          <Component id="VolverMenu" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -248,15 +248,15 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AgregarEntrenadorActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="Luchar">
+        <Component class="javax.swing.JButton" name="VolverMenu">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="A luchar!"/>
+            <Property name="text" type="java.lang.String" value="Menu"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LucharActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VolverMenuActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

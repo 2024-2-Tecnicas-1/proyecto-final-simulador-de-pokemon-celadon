@@ -351,6 +351,7 @@ public class Principal {
         }
     }
 
+    
     private static void iniciarBatalla() {
         System.out.println("");
         System.out.println("");
